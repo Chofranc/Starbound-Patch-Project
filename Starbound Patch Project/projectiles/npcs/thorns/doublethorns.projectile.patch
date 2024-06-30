@@ -1,1 +1,38 @@
-[[{ "op": "replace", "path": "/speed", "value": 23.0 }]]
+[
+  [
+    {
+      "op" : "test",
+      "path" : "/speed",
+      "value" : -23
+    },
+    {
+      "op" : "replace",
+      "path" : "/speed",
+      "value" : 23
+    }
+  ],
+  [
+    {
+      "op" : "test",
+      "path" : "/actionOnReap/0/inheritSpeedFactor",
+      "value" : -3
+    },
+    {
+      "op" : "replace",
+      "path" : "/actionOnReap/0/inheritSpeedFactor",
+      "value" : 3
+    }
+  ],
+  [
+    {
+      "op" : "test",
+      "path" : "/actionOnReap/1/inheritSpeedFactor",
+      "value" : -3
+    },
+    {
+      "op" : "replace",
+      "path" : "/actionOnReap/1/inheritSpeedFactor",
+      "value" : 3
+    }
+  ]
+]
